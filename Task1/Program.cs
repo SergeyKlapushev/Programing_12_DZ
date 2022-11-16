@@ -6,6 +6,7 @@ Messager("Введите число М: ");
 int M = InputNum();
 Messager("Введите число N: ");
 int N = InputNum();
+Messager($"M = {M}; N = {N} -> ");
 
 OutputOfEvenNaturalNumbers(M, N);
 
@@ -30,8 +31,6 @@ void OutputOfEvenNaturalNumbers(int m, int n)
         Console.Write($"{m} ");
     }
     
-
-
     OutputOfEvenNaturalNumbers(m + 1, n);
 
 }

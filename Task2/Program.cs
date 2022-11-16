@@ -25,11 +25,17 @@ int InputNum()
 
 void OutputOfEvenNaturalNumbers(int m, int n, int s)
 {
+    if (m < 0)
+    {
+        m = 0;
+    }
+
     if (m > n)
     {
         Console.Write(s);
         return;
     }
+
     if (m <= n)
     {
         s = s + m;
